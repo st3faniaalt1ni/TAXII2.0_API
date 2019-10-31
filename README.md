@@ -1,7 +1,7 @@
-# Taxii_api
+# TAXII2.0_API
 
 
-We use medallion which is a prototype TAXII server implementation. As medallion is a prototype TAXII server implementation, the schema design for a Mongo DB is relatively straightforward. Its main purpose is for use in testing scenarios of STIX 2.0.It has been developed in conjunction with cti-taxii-client but should be compatible with any TAXII client which makes HTTP requests as defined in TAXII 2.0 specification.
+We use medallion which is a prototype TAXII server implementation.TAXII 2.0 Server implemented in Flask with MongoDB backend.Its main purpose is for use in testing scenarios of STIX 2.0.It has been developed in conjunction with cti-taxii-client but should be compatible with any TAXII client which makes HTTP requests as defined in TAXII 2.0 specification.
 
 # Installation Instructions and Usage
 
@@ -75,13 +75,13 @@ mongo-connector -m localhost:27018 -t http://localhost:7474/db/data -d neo4j_doc
 With the REST API and the “neo4j_doc_manager” service running, Stix 2.0 JSON-based documents inserted into MongoDB will be converted into a graph structure and immediately inserted into Neo4j as well. Neo4j Doc Manager will turn keys into graph nodes. Nested values on each key will become properties.
 
 
+
 # TAXII Server 
-https://github.com/oasis-open/cti-taxii-server
+git clone https://github.com/oasis-open/cti-taxii-server.git
 
 # TAXII_api
-We initialise  TAXII_ api and make an authorized user
+We initialise  TAXII_API and make an authorized user
 
 
 # Visualisation (Optional):
-
 Postman can be used for HTTP requests  and Mongo Compass for TAXII collections in MongoDB 
