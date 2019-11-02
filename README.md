@@ -70,18 +70,23 @@ mongo-connector -m localhost:27018 -t http://localhost:7474/db/data -d neo4j_doc
 
 
 
-# Data synchronization
-
-With the REST API and the “neo4j_doc_manager” service running, Stix 2.0 JSON-based documents inserted into MongoDB will be converted into a graph structure and immediately inserted into Neo4j as well. Neo4j Doc Manager will turn keys into graph nodes. Nested values on each key will become properties.
-
-
 
 # TAXII Server 
-git clone https://github.com/oasis-open/cti-taxii-server.git
+ Follow the installation instructions for the Medallion TAXII Server Implementation
+ https://github.com/oasis-open/cti-taxii-server.git
 
-# TAXII_api
-We initialise  TAXII_API and make an authorized user
 
+# TAXII_API
+Initialise  TAXII_API 
+~~~
+python3 api_db_setup.py 
+python3 main.py 
+~~~
+
+Create user and authentication credentials in the server
+~~~
+python3 auth_db_utils.py --user
+~~~
 
 # Visualisation (Optional):
 Postman can be used for HTTP requests  and Mongo Compass for TAXII collections in MongoDB 
