@@ -75,6 +75,33 @@ mongo-connector -m localhost:27018 -t http://localhost:7474/db/data -d neo4j_doc
  Follow the installation instructions for the Medallion TAXII Server Implementation
  https://github.com/oasis-open/cti-taxii-server.git
 
+~~~ 
+ [ ] Clone medallion
+git clone https://github.com/oasis-open/cti-taxii-server.git
+
+cd cti-taxii-server
+pip3 install -r requirements
+
+To run
+python3 medallion/scripts/run --port <PORT TO RUN> --log-level <DEBUG> <configuration json file>
+~~~ 
+ 
+ 
+# TAXII Client
+ Follow the installation instructions for the minimal client implementation for the TAXII 2.0 server
+ https://github.com/oasis-open/cti-taxii-server.git
+ 
+ ~~~
+ pip3 install taxii2-client
+ 
+ python3
+ 
+ from taxii2client import Server
+ server = Server('https://example.com/taxii/', user='user_id', password='user_password')
+ ~~~
+ 
+ 
+
 
 # TAXII_API
 Initialise  TAXII_API 
@@ -83,7 +110,7 @@ python3 api_db_setup.py
 python3 main.py 
 ~~~
 
-Create user and authentication credentials in the server
+Create user and authentication credentials to access the server
 ~~~
 python3 auth_db_utils.py --user
 ~~~
