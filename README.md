@@ -98,6 +98,7 @@ python3 medallion/scripts/run --port <PORT TO RUN> --log-level <DEBUG> <configur
  
  from taxii2client import Server
  server = Server('https://example.com/taxii/', user='user_id', password='user_password')
+ print(server.title)
  ~~~
  
  
