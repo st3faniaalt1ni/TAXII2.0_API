@@ -88,8 +88,6 @@ python3 medallion/scripts/run --port <PORT TO RUN> --log-level <DEBUG> <configur
  
  
 # TAXII Client
- Follow the installation instructions for the minimal client implementation for the TAXII 2.0 server
- https://github.com/oasis-open/cti-taxii-server.git
  
  ~~~
  pip3 install taxii2-client
