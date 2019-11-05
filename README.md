@@ -116,4 +116,4 @@ python3 auth_db_utils.py --user
 ~~~
 
 # Visualisation (Optional):
-Postman can be used for HTTP requests  and Mongo Compass for TAXII collections in MongoDB 
+Mongo Compass  can be used for TAXII collections in MongoDB 
