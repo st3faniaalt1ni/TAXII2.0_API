@@ -1,7 +1,7 @@
 # TAXII2.0_API
 
 
-We use medallion which is a prototype TAXII server implementation.TAXII 2.0 Server implemented in Flask with MongoDB backend.Its main purpose is for use in testing scenarios of STIX 2.0.It has been developed in conjunction with cti-taxii-client but should be compatible with any TAXII client which makes HTTP requests as defined in TAXII 2.0 specification.
+We use medallion which is a prototype TAXII server implementation.TAXII 2.0 Server is implemented in Python with MongoDB backend and usage of Flask library.Its main purpose is for testing and demonstrating scenarios of STIX 2.0.It has been developed in conjunction with cti-taxii-client but should be compatible with any TAXII client which makes HTTP requests as defined in TAXII 2.0 specification.
 
 # Installation Instructions and Usage
 
@@ -69,50 +69,56 @@ mongo-connector -m localhost:27018 -t http://localhost:7474/db/data -d neo4j_doc
 **-d** specifies Neo4j Doc Manager.
 
 
-
-
 # TAXII Server 
+
  Follow the installation instructions for the Medallion TAXII Server Implementation
  https://github.com/oasis-open/cti-taxii-server.git
 
+Clone medallion and install required packages
 ~~~ 
- [ ] Clone medallion
 git clone https://github.com/oasis-open/cti-taxii-server.git
 
 cd cti-taxii-server
 pip3 install -r requirements
-
+~~~
 To run
+~~~
 python3 medallion/scripts/run --port <PORT TO RUN> --log-level <DEBUG> <configuration json file>
 ~~~ 
  
- 
-# TAXII Client
- 
- ~~~
- pip3 install taxii2-client
- 
- python3
- 
- from taxii2client import Server
- server = Server('https://example.com/taxii/', user='user_id', password='user_password')
- print(server.title)
- ~~~
- 
- 
 
-
-# TAXII_API
-Initialise  TAXII_API 
-~~~
-python3 api_db_setup.py 
-python3 main.py 
-~~~
-
-Create user and authentication credentials to access the server
+Create user and authentication credentials to have  permission to access the server. To create the user credentials use the script available at cti-taxii-server/medallion/scripts/auth_db_utils
 ~~~
 python3 auth_db_utils.py --user
 ~~~
 
+# TAXII_API
+Initialise  TAXII_API mongodb backend with demo data
+~~~
+python3 api_db_setup.py
+~~~
+
+# TAXII Client
+ 
+ ~~~
+ pip3 install taxii2-client
+ ~~~
+ 
+
+
+
+
+After having created the appropriate credentials you can get information about TAXII Server, available Api's  and TAXII Collections, import a new TAXII collection in your Api or/and import STIX stream data as bundles in a collection.
+~~~
+python3 api_db_setup_medallion.py 
+python3 api_client_info_demo.py
+~~~
+~~~
+ python3 api_db_new_collection.py 
+~~~
+~~~
+python3 api_client_post_demo.py 
+~~~
+
 # Visualisation (Optional):
-Mongo Compass  can be used for TAXII collections in MongoDB 
+Postman can be used for visualisation of TAXII Endpoints  and Mongo Compass  for TAXII collections in MongoDB. Further neo4j frontend can be used for graph cypher queries.
