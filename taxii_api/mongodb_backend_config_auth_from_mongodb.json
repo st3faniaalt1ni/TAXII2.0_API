@@ -1,0 +1,46 @@
+{
+  "backend": {
+        "module": "medallion.backends.taxii.mongodb_backend",
+        "module_class": "MongoBackend",
+        "uri": "mongodb://localhost:27018/"
+     },
+
+    "discovery": {
+     "title": "Demonstration TAXII Server",
+     "description": "This TAXII Server contains a APT1 example dataset",
+     "contact": "Stefania Altini",
+     "default": "http://localhost:5000/demo_api/",
+     "api_roots": [
+         "http://localhost:5000/demo_api/"
+     ]
+    },
+    "api-root": {
+    "title": "Demonstrative API",
+    "description": "A demo api for my thesis",
+    "versions": [
+          "taxii-2.0"
+    ],
+    "max_content_length": 9765625,
+    "_url": "http://localhost:5000/demo_api/",
+    "_name": "APT1_example"
+    },
+    "collection":{
+      "id": "91a7b528-80eb-42ed-a74d-c6fbd5a26116",
+      "title": "demo dataset collection",
+      "description": "This data collection is an example of STIX objects collection",
+      "can_read": true,
+      "can_write": true,
+      "media_types": [
+            "application/vnd.oasis.stix+json; version=2.0"
+      ]
+ },
+  "taxii": {
+    "max_page_size": 100
+  },
+  "auth": {
+        "module": "medallion.backends.auth.mongodb_auth",
+        "module_class": "AuthMongodbBackend",
+        "uri": "mongodb://localhost:27018/",
+        "db_name": "auth"
+    }
+}

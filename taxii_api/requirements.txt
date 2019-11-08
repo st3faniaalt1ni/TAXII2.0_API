@@ -1,0 +1,4 @@
+flask
+flask-pymongo
+stix2-validator
+python-dateutil
