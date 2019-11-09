@@ -6,7 +6,7 @@ import uuid
 connection = MongoClient('localhost', 27018)
 
 discovery_db = {"title": "Demonstration TAXII Server",
-     "description": "This TAXII Server contains a APT1 example dataset",
+     "description": "This TAXII Server contains an APT1 example dataset",
      "contact": "Stefania Altini",
      "default": "http://localhost:8090/demo_api/",
      "api_roots": [
