@@ -3,7 +3,7 @@ import bson
 import uuid
 
 # connect to database
-connection = MongoClient('localhost', 27017)
+connection = MongoClient('localhost', 27018)
 
 discovery_db = {"title": "Demonstration TAXII Server",
      "description": "This TAXII Server contains a APT1 example dataset",
