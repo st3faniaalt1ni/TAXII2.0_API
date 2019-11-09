@@ -2,7 +2,7 @@ from taxii2client import Server,Collection,ApiRoot, Status
 
 
 if __name__ == "__main__":
-	server = Server('http://localhost:8090/taxii', user='stefania', password='1234')
+	server = Server('http://localhost:8090/taxii', user='it06156@uom.edu.gr', password='sa1234!@')
 
 	print("Server title : %s"% server.title)
 	print("Default API : %s"%server.default)
