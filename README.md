@@ -93,9 +93,9 @@ python3 auth_db_utils.py --user
 ~~~
 
 # TAXII_API
-Initialise  TAXII_API mongodb backend with demo data
+Initialize  TAXII_API mongodb backend with demo data
 ~~~
-python3 api_db_setup.py
+python3 api_db_setup_medallion.py 
 ~~~
 
 # TAXII Client
@@ -110,7 +110,6 @@ python3 api_db_setup.py
 
 After having created the appropriate credentials you can get information about TAXII Server, available Api's  and TAXII Collections, import a new TAXII collection in your Api or/and import STIX stream data as bundles in a collection.
 ~~~
-python3 api_db_setup_medallion.py 
 python3 api_client_info_demo.py
 ~~~
 ~~~
@@ -121,4 +120,4 @@ python3 api_client_post_demo.py
 ~~~
 
 # Visualisation (Optional):
-Postman can be used for visualisation of TAXII Endpoints  and Mongo Compass  for TAXII collections in MongoDB. Further neo4j frontend can be used for graph cypher queries.
+Postman can be used for visualisation of TAXII Endpoints  and MongoDB Compass  for TAXII collections in MongoDB. Further Neo4j frontend can be used for graph cypher queries.
