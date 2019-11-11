@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "6ac7583f-cb34-412a-8607-ee5b482f861e",
+		"name": "taxii_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Manifest",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8090/demo_api/collections/f45753b6-d69c-48b3-97e1-20a8de4c178b/manifest",
+				"description": "http://127.0.0.1:8090/demo_api/collections/51a9fef4-57cd-4037-a379-532ac070ea52/manifest\n\nIt keeps the different versions of each object. "
+			},
+			"response": []
+		},
+		{
+			"name": "Status",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8090/demo_api/status/f889126f-04ef-46ea-98e1-0a02d137dabc/",
+				"description": "http://localhost:8090/demo_api/status/74239eb3-2b35-4f82-bf5c-610a1a3757f8/\n\nprogress of processing the request"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Collections",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8090/demo_api/collections/",
+				"description": "http://127.0.0.1:8090/demo_api/collections/\n\nThis Endpoint provides information about the Collections hosted under this API Root. This is similar to the response to get a Collection (see section 5.2), but rather than providing information about one Collection it provides information about all of the Collections. Most importantly, it provides the Collection's id, which is used to request objects or manifest entries from the Collection."
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve_Collection_Objects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8090/demo_api/collections/f45753b6-d69c-48b3-97e1-20a8de4c178b/objects",
+				"description": "http://127.0.0.1:8090/demo_api/collections/51a9fef4-57cd-4037-a379-532ac070ea52/objects\n\nThis Endpoint retrieves objects from a Collection. Clients can search for objects in the Collection, retrieve all objects in a Collection, or paginate through objects in the Collection.\n\nTo support searching the Collection, the Endpoint supports filtering as defined in section 3.5. Clients can provide one or more filter parameters to get objects with a specific ID, of a specific type, or with a specific version. Future versions of TAXII will add more advanced filtering capabilities.\n\nTo support requesting a large number of objects, the Endpoint supports pagination as defined in section 3.4. Clients can optionally provide their desired number of items per page and which page they want and servers will return that result set. Servers can also override client-provided pagination parameters, including requiring pagination when it isn't requested. As such, all clients should be aware that responses to this Endpoint may be paginated and be prepared to properly handle that.\n\nWhen requesting STIX 2.0 content, the content will always be delivered in a STIX bundle (even if there's only zero or one objects, in which case the bundle will be empty or only contain one object). Other content types can be requested by using a different Accept header, however the specific representation of other content types is not defined."
+			},
+			"response": []
+		},
+		{
+			"name": "Server Information",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8090/taxii/",
+				"description": "This Endpoint provides general information about a TAXII Server, including the advertised API Roots. It's a common entry point for TAXII Clients into the data and services provided by a TAXII Server. For example, clients auto-discovering TAXII Servers via the DNS SRV record defined in section 1.4.1 will be able to automatically retrieve a discovery response for that server by requesting the /taxii/ path on that domain."
+			},
+			"response": []
+		},
+		{
+			"name": "API Root Information",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8090/demo_api/",
+				"description": "API Root Information\nhttp://127.0.0.1:8090/demo_api/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  a Collection",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8090/demo_api/collections/b5473055-1e65-4d85-8cb6-5e29b8462376"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Objects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8090/demo_api/collections/b5473055-1e65-4d85-8cb6-5e29b8462376/objects",
+				"description": "​ Get Objects\n\nhttp://127.0.0.1:8090/demo_api/collections/b5473055-1e65-4d85-8cb6-5e29b8462376/objects"
+			},
+			"response": []
+		},
+		{
+			"name": "Get an object",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "sa1234!@",
+						"username": "it06156@uom.edu.gr"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8090/demo_api/collections/b5473055-1e65-4d85-8cb6-5e29b8462376/objects/threat-actor--d84cf283-93be-4ca7-890d-76c63eff3636",
+				"description": "http://127.0.0.1:8090/demo_api/collections/b5473055-1e65-4d85-8cb6-5e29b8462376/objects/threat-actor--d84cf283-93be-4ca7-890d-76c63eff3636"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
