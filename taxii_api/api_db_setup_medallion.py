@@ -32,8 +32,8 @@ api_info_bson = db.api_root_info.insert_one(api_description)
 
 collections_doc = {
         "id": str(uuid.uuid4()),
-        "title": "Demo Collection",
-        "description": "This data collection contains STIX 2.0 objects related to threat reports and it is for demonstrating purposes",
+        "title": "TAXII Demo Collection",
+        "description": "This data collection contains STIX 2.0 objects related to threat reports which are about threats targeting government and defense sectors.It is for demonstrating purposes.",
         "can_read": True,
         "can_write": True,
         "media_types": [
