@@ -56,7 +56,7 @@ pip3 install neo4j-doc-manager
 
  Set  **NEO4J_AUTH** environment variable, containing  user and password. Username and password must be the same as the environment variables of neo4j container as they have been initiated on previous step.
 ~~~
-export NEO4J_AUTH=<neo4j_instance_username>/< neo4j_instance_password>
+export NEO4J_AUTH=<neo4j_instance_username>:< neo4j_instance_password>
 
 ~~~
 
