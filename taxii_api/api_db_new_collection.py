@@ -10,8 +10,8 @@ db = connection[api_name]
 
 collections_doc = {
         "id": str(uuid.uuid4()),
-        "title": "Second Demo Collection",
-        "description": "This data collection contains  STIX 2.0 objects  related to Ransomware IP,Domain and URL blocklists.This collection is also  for demonstrative purposes",
+        "title": "Second TAXII Demo Collection",
+        "description": "This data collection contains STIX 2.0 objects related to threat reports which are about threats targeting private organizations, companies, financial organizations or IT security companies.It is for demonstrating purposes too.",
         "can_read": True,
         "can_write": True,
         "media_types": [
