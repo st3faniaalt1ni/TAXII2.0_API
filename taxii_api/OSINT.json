@@ -1,0 +1,337 @@
+{
+  "type": "bundle",
+  "id": "bundle--c9567f73-3803-415c-b06e-2b0622830e5d",
+  "spec_version": "2.0",
+  "objects": [
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3aeffa82-bb5e-4e1f-96d8-51d759966933",
+            "created": "2018-12-13T02:53:56.005Z",
+            "modified": "2018-12-13T02:53:56.005Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '25z5g623wpqpdwis.onion.to' ]",
+            "valid_from": "2018-12-13T02:53:56.005708Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--362fa440-3c65-464d-b65a-60b937c161f8",
+            "created": "2018-12-13T02:53:56.02Z",
+            "modified": "2018-12-13T02:53:56.02Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27c73bq66y4xqoh7.dorfact.at' ]",
+            "valid_from": "2018-12-13T02:53:56.020448Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--34cf2b1f-d5b6-49f1-8eec-4092b38dd307",
+            "created": "2018-12-13T02:53:56.028Z",
+            "modified": "2018-12-13T02:53:56.028Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27lelchgcvs2wpm7.3lhjyx.top' ]",
+            "valid_from": "2018-12-13T02:53:56.028239Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d830e3a8-fb3b-41e7-ad74-aac0683b1259",
+            "created": "2018-12-13T02:53:56.035Z",
+            "modified": "2018-12-13T02:53:56.035Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27lelchgcvs2wpm7.7jiff7.top' ]",
+            "valid_from": "2018-12-13T02:53:56.035293Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1c5dbb2b-ee42-4892-91b9-3e92432c401a",
+            "created": "2018-12-13T02:53:56.043Z",
+            "modified": "2018-12-13T02:53:56.043Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27lelchgcvs2wpm7.7zv8o2.top' ]",
+            "valid_from": "2018-12-13T02:53:56.043602Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8beb9b11-4d63-4ad1-b652-db4294aeebce",
+            "created": "2018-12-13T02:53:56.052Z",
+            "modified": "2018-12-13T02:53:56.052Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27lelchgcvs2wpm7.9ildst.top' ]",
+            "valid_from": "2018-12-13T02:53:56.052043Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--add06cdc-fad0-4e0f-a819-961eb3b1ff76",
+            "created": "2018-12-13T02:53:56.061Z",
+            "modified": "2018-12-13T02:53:56.061Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27lelchgcvs2wpm7.adevf4.top' ]",
+            "valid_from": "2018-12-13T02:53:56.061515Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--14c7c122-6d09-4a5d-98d2-f70bd59e43c5",
+            "created": "2018-12-13T02:53:56.072Z",
+            "modified": "2018-12-13T02:53:56.072Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27lelchgcvs2wpm7.ag082d.top' ]",
+            "valid_from": "2018-12-13T02:53:56.072911Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5a989449-323f-404d-914b-0199332c6aea",
+            "created": "2018-12-13T02:53:56.081Z",
+            "modified": "2018-12-13T02:53:56.081Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27lelchgcvs2wpm7.apperloads.win' ]",
+            "valid_from": "2018-12-13T02:53:56.081779Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3ba8c48e-a6d3-496a-a23b-73300a205a26",
+            "created": "2018-12-13T02:53:56.089Z",
+            "modified": "2018-12-13T02:53:56.089Z",
+            "labels": [
+                "botnet",
+                "c-and-c",
+                "malicious-activity",
+                "ransomware"
+            ],
+            "lang": "en-us",
+            "external_references": [
+                {
+                    "source_name": "abuse.ch",
+                    "url": "https://ransomwaretracker.abuse.ch/blocklist/"
+                }
+            ],
+            "name": "Ransomware Domain Blocklist",
+            "description": "Domain Blocklist address from abuse.ch",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ domain-name:value = '27lelchgcvs2wpm7.asd3r3.top' ]",
+            "valid_from": "2018-12-13T02:53:56.089383Z",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "lockheed-martin-cyber-kill-chain",
+                    "phase_name": "command-and-control"
+                }
+            ]
+        }
+    ]
+}
