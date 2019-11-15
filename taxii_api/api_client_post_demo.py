@@ -14,7 +14,7 @@ if __name__ == "__main__":
     server = Server('http://localhost:8090/taxii', user='it06156@uom.edu.gr', password='sa1234!@')
 
     print("Server title : %s"% server.title)
-    collection = Collection('http://localhost:8090/demo_api/collections/b5473055-1e65-4d85-8cb6-5e29b8462376', user='it06156@uom.edu.gr', password='sa1234!@')
+    collection = Collection('http://localhost:8090/demo_api/collections/7d9a78b8-46f6-4b88-98c5-595f54251e21', user='it06156@uom.edu.gr', password='sa1234!@')
     print('Description : %s'%collection.description)
 
 
