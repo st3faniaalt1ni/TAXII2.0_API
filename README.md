@@ -79,7 +79,7 @@ Clone medallion and install required packages
 git clone https://github.com/oasis-open/cti-taxii-server.git
 
 cd cti-taxii-server
-pip3 install -r requirements
+pip3 install -r requirements.txt
 ~~~
 To run
 ~~~
@@ -113,7 +113,7 @@ After having created the appropriate credentials you can get information about T
 python3 api_client_info_demo.py
 ~~~
 ~~~
- python3 api_db_new_collection.py 
+python3 api_db_new_collection.py 
 ~~~
 ~~~
 python3 api_client_post_demo.py 
