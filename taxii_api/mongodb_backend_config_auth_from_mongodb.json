@@ -7,7 +7,7 @@
 
     "discovery": {
      "title": "Demonstration TAXII Server",
-     "description": "This TAXII Server contains a APT1 example dataset",
+     "description": "This TAXII Server contains threat reports example dataset",
      "contact": "Stefania Altini",
      "default": "http://localhost:5000/demo_api/",
      "api_roots": [
@@ -27,7 +27,7 @@
     "collection":{
       "id": "91a7b528-80eb-42ed-a74d-c6fbd5a26116",
       "title": "demo dataset collection",
-      "description": "This data collection is an example of STIX objects collection",
+      "description": "This data collection contains STIX 2.0 objects related to threat reports which are about threats targeting government and defense sectors.It is for demonstrating purposes.",
       "can_read": true,
       "can_write": true,
       "media_types": [
