@@ -7,7 +7,7 @@ from datetime import datetime
 from stix2validator import validate_instance, print_results
 
 
-# Endpoints are created according to taxi2 specification
+# Endpoints are created according to TAXII2.0 specification
 # https://docs.google.com/document/d/1Jv9ICjUNZrOnwUXtenB1QcnBLO35RnjQcJLsa1mGSkI/pub#h.on5bbeus95hi
 
 # On this function, uri's from app.py are connected with the databases names. It must be configured manually in case
@@ -69,7 +69,7 @@ def documents(api):
     else:
         return not_found()
 
-# function of API to return a specific taxi collection of specified API (mongo collection 'collections' of API db).
+# function of API to return a specific TAXII2.0 collection of specified API (mongo collection 'collections' of API db).
 @app.route('/<api>/collections/<id>')
 def get_collection_by_id(api,id):
     collection_id = id
@@ -295,7 +295,7 @@ def get_post_objects_in_collection(api,cid):
 #                                                        "relationship_type"] if "relationship_type" in _json else "relationship_type"},
 #
 #                                               })
-#         resp = jsonify('STIX Document updated successfully!')
+#         resp = jsonify('STIX 2.0 Document updated successfully!')
 #         resp.status_code = 200
 #         return resp
 #     else:
@@ -314,7 +314,7 @@ def get_post_objects_in_collection(api,cid):
 # def delete_documents(id):
 #     mongo.db.threats.delete_one({'_id': ObjectId(id)})
 #     # mongo.db.collection_name.delete_one({'_id': ObjectId(id)})
-#     resp = jsonify('STIX Document deleted successfully!')
+#     resp = jsonify('STIX 2.0 Document deleted successfully!')
 #     resp.status_code = 200
 #     return resp
 
