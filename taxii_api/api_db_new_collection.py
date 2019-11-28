@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import bson
 import uuid
 
-# connect to database
+# connect to  Mongo database
 connection = MongoClient('localhost', 27018)
 api_name = 'demo_api'
 db = connection[api_name]
